@@ -4,7 +4,7 @@ const SignUpForm = () => {
     return (
         <div className="mx-auto w-1/5 mt-10">
             <form className="flex flex-col space-y-4">
-                <div className="flex border border-black rounded-full p-3">
+                <div className="flex border border-black rounded-full p-3 shadow-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                          stroke="currentColor" className="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -12,7 +12,7 @@ const SignUpForm = () => {
                     </svg>
                     <p className="ml-5">Continue with Google</p>
                 </div>
-                <div className="flex border border-black rounded-full p-3">
+                <div className="flex border border-black rounded-full p-3 shadow-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                          stroke="currentColor" className="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -28,7 +28,9 @@ const SignUpForm = () => {
                 <input className="border rounded-full border-black pl-3" type="text" placeholder="Full name"/>
                 <input className="border rounded-full border-black pl-3" type="email" placeholder="Email"/>
                 <input className="border rounded-full border-black pl-3" type="password" placeholder="Password"/>
-                <p>By signing up, you agree to our Terms of Use and our Private Policy</p>
+                <p className="text-xs text-center">By signing up, you agree to our <u>Terms of Use</u> and our <u>Private Policy</u></p>
+                <hr/>
+                <p className="text-xs text-center">Already have an account?<u className="text-orange-500 underline pl-1">Log in</u></p>
             </form>
         </div>
     );
