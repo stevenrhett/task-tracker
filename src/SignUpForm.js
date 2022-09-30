@@ -37,7 +37,7 @@ const SignUpForm = () => {
                 <input className="border rounded-full border-black pl-3 p-3" type="text" placeholder="Full name"/>
                 <input className="border rounded-full border-black pl-3 p-3" type="email" placeholder="Email"/>
                 <input className="border rounded-full border-black pl-3 p-3" type="password" placeholder="Password"/>
-                <button className="btn btn-primary bg-green-700 rounded-full">Sign up</button>
+                <button className="btn-md text-white text-lg font-bold bg-[#2A9D8F] rounded-full border-0">Sign up</button>
                 <p className="text-xs text-center">By signing up, you agree to our <u>Terms of Use</u> and our <u>Private Policy</u></p>
                 <hr/>
                 <p className="text-xs text-center">Already have an account?<u className="text-orange-500 underline pl-1 cursor-pointer">Log in</u></p>
