@@ -9,9 +9,8 @@ function App() {
   return(
   <div>
       <DisplayAllTasks/>
-      <AboutUsPageB/>
-      <LogInForm/>
-      <SignUpPage/>
+
+
   </div>
   );
 }
