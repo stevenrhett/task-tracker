@@ -1,10 +1,10 @@
 import './App.css';
+import HeaderComponent from "./HeaderComponent";
 
 function App() {
   return(
   <div>
-  <h1 className="text-3xl bg-pink-500">HELLO HELLO</h1>
-
+  <HeaderComponent/>
   </div>
   );
 }
