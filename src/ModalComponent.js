@@ -38,7 +38,6 @@ const ModalComponent = () => {
 
             </div>
         </div>
-
     );
 };
 
