@@ -1,18 +1,20 @@
-import './App.css';
- feature/log-in-sign-up
 import SignUpPage from "./SignUpPage";
 import LogInForm from "./LogInForm";
 import HeaderComponent from "./HeaderComponent";
- main
+import FooterComponent from "./FooterComponent";
+
+{/*feature/log-in-sign-up*/}
+
 
 function App() {
   return(
   <div>
- feature/log-in-sign-up
-      <LogInForm/>
+      <HeaderComponent/>
+
+
       <SignUpPage/>
-  <HeaderComponent/>
- main
+<FooterComponent/>
+      {/*main*/}
   </div>
   );
 }
