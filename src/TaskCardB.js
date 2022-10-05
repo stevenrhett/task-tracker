@@ -11,7 +11,7 @@ const TaskCardB = ({title, description, privacy}) => {
                 <div className="flex border w-1/3 h-24 bg-gray-100">
 
                     <div>
-                        <p>{description}</p>
+                        <p className="mt-8 ml-3">{description}</p>
                     </div>
                 </div>
                 <input type="checkbox"/>
