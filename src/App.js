@@ -9,7 +9,6 @@ function App() {
         <div>
 
             <HeaderComponent/>
-            <LogInForm/>
             <PublicLoginPage/>
             <FooterComponent/>
 
