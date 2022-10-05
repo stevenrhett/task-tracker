@@ -1,3 +1,24 @@
+
+
+import './index.css';
+import PublicLoginPage from "./PublicLoginPage";
+import HeaderComponent from "./HeaderComponent";
+import FooterComponent from "./FooterComponent";
+import LogInForm from "./LogInForm";
+
+function App() {
+    return (
+        <div>
+
+            <HeaderComponent/>
+            <LogInForm/>
+            <PublicLoginPage/>
+            <FooterComponent/>
+
+        </div>
+    );
+}
+
 import React from 'react';
 
 const PublicUserLogin = () => {
@@ -5,10 +26,7 @@ const PublicUserLogin = () => {
         <div>
             <div className="overflow-x-auto">
                 <table className="table w-full">
-
-
                     <tbody className="text-teal-600">
-
                     <tr >
                         <th>
                             <label>
