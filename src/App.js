@@ -11,7 +11,6 @@ function App() {
   <div>
       <HeaderComponent/>
 
-
       <SignUpPage/>
 <FooterComponent/>
       {/*main*/}
