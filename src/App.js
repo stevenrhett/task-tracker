@@ -1,21 +1,19 @@
 import SignUpPage from "./SignUpPage";
-import LogInForm from "./LogInForm";
 import HeaderComponent from "./HeaderComponent";
 import FooterComponent from "./FooterComponent";
-
-{/*feature/log-in-sign-up*/}
+import ModalComponent from "./ModalComponent";
 
 
 function App() {
-  return(
-  <div>
-      <HeaderComponent/>
+    return (
+        <div>
+            <HeaderComponent/>
+            <ModalComponent/>
+            <SignUpPage/>
+            <FooterComponent/>
 
-      <SignUpPage/>
-<FooterComponent/>
-      {/*main*/}
-  </div>
-  );
+        </div>
+    );
 }
 
 export default App;
