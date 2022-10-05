@@ -3,8 +3,7 @@ import React from 'react';
 const FooterComponent = () => {
     return (
         <div>
-            <div
-                className=" flex items-center justify-center space-x-4 font-bold text-lg text-teal-500 p-4 primary-content text-base-content">
+            <div className=" flex items-center justify-center space-x-4 font-bold text-lg text-teal-500 p-4 primary-content text-base-content">
                 <a href="#" className="text-teal-600 text-lg hover:text-teal-700">About</a>
                 <a href="#" className="text-teal-600 text-lg hover:text-teal-700">Contact</a>
                 <a href="#" className="text-teal-600 text-lg hover:text-teal-700">Team</a>

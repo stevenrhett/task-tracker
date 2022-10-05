@@ -1,20 +1,19 @@
 import './index.css';
+import PublicLoginPage from "./PublicLoginPage";
 import HeaderComponent from "./HeaderComponent";
 import FooterComponent from "./FooterComponent";
 import LogInForm from "./LogInForm";
-import PublicLoginPage from "./PublicLoginPage";
-import PublicUserLogin from "./PublicUserLogin";
 
 function App() {
-    return (<div>
+    return (
+        <div>
 
-        <HeaderComponent/>
-        <LogInForm/>
-        <PublicLoginPage/>
-        <PublicUserLogin/>
-        <FooterComponent/>
+            <HeaderComponent/>
+            <PublicLoginPage/>
+            <FooterComponent/>
 
-    </div>);
+        </div>
+    );
 }
 
 export default App;
