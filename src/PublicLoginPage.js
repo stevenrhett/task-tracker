@@ -5,12 +5,11 @@ const PublicLoginPage = () => {
         <div>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
-
                     <thead className="text-orange-400">
                     <tr>
                         <th>
-                            <label>
-                                <input type="checkbox" className="checkbox"/>
+                        <label>
+                         <input type="checkbox" className="checkbox"/>
                             </label>
                         </th>
                         <th>Name</th>
@@ -20,8 +19,7 @@ const PublicLoginPage = () => {
                     </tr>
                     </thead>
                     <tbody className="text-teal-600">
-
-                    <tr>
+                      <tr>
                         <th>
                             <label>
                                 <input type="checkbox" className="checkbox bg-orange-400"/>
@@ -32,7 +30,8 @@ const PublicLoginPage = () => {
                                 <div className="avatar">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
-                                            <img src="https://placeimg.com/80/80/people" alt="alt"/>
+                                          <img src="https://placeimg.com/80/80/people" alt="alt"/>
+                                            <img src="https://placeimg.com/80/80/people"/>
                                         </div>
                                     </label>
                                 </div>
@@ -44,7 +43,6 @@ const PublicLoginPage = () => {
                         </td>
                         <td>
                             Finish science reading
-
                             <span className="badge badge-ghost badge-sm">Student</span>
                         </td>
                         <td>11/29/2022</td>
@@ -52,7 +50,6 @@ const PublicLoginPage = () => {
                             <button className="btn btn-ghost btn-xs">details</button>
                         </th>
                     </tr>
-
                     <tr>
                         <th>
                             <label>
@@ -65,6 +62,7 @@ const PublicLoginPage = () => {
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
                                             <img src="https://placeimg.com/80/80/people" alt="alt"/>
+                                            <img src="https://placeimg.com/80/80/people"/>
                                         </div>
                                     </label>
                                 </div>
@@ -76,16 +74,14 @@ const PublicLoginPage = () => {
                         </td>
                         <td>
                             study for History test
-
                             <span className="badge badge-ghost badge-sm">Student</span>
                         </td>
                         <td>12/05/2022</td>
                         <th>
                             <button className="btn btn-ghost btn-xs">details</button>
                         </th>
-                    </tr>
-
-                    <tr>
+                    </tr>             
+                   <tr>
                         <th>
                             <label>
                                 <input type="checkbox" className="checkbox bg-orange-400"/>
@@ -96,8 +92,9 @@ const PublicLoginPage = () => {
                                 <div className="avatar">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
-                                            <img src="https://placeimg.com/80/80/people" alt="alt"/>
-                                        </div>
+                                           <img src="https://placeimg.com/80/80/people" alt="alt"/>
+                                            <img src="https://placeimg.com/80/80/people"/>
+                                       </div>
                                     </label>
                                 </div>
                                 <div>
@@ -108,15 +105,13 @@ const PublicLoginPage = () => {
                         </td>
                         <td>
                             practice speech
-
                             <span className="badge badge-ghost badge-sm">Student</span>
                         </td>
                         <td>12/02/2022</td>
                         <th>
                             <button className="btn btn-ghost btn-xs">details</button>
                         </th>
-                    </tr>
-
+                    </tr>        
                     <tr>
                         <th>
                             <label>
@@ -128,7 +123,11 @@ const PublicLoginPage = () => {
                                 <div className="avatar">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
+
                                             <img src="https://placeimg.com/80/80/people" alt="alt"/>
+
+                                            <img src="https://placeimg.com/80/80/people"/>
+
                                         </div>
                                     </label>
                                 </div>
@@ -148,8 +147,7 @@ const PublicLoginPage = () => {
                             <button className="btn btn-ghost btn-xs">details</button>
                         </th>
                     </tr>
-                    </tbody>
-
+                    </tbody>                   
                     <tfoot className="text-orange-400">
                     <tr>
                         <th></th>
@@ -160,9 +158,12 @@ const PublicLoginPage = () => {
                         <th></th>
                     </tr>
                     </tfoot>
-
                 </table>
             </div>
+
+
+
+  
 
 
 
