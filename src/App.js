@@ -1,19 +1,14 @@
-import SignUpPage from "./SignUpPage";
 import HeaderComponent from "./HeaderComponent";
-import FooterComponent from "./FooterComponent";
 import ModalComponent from "./ModalComponent";
-
+import WelcomeComponent from "./WelcomeComponent";
 
 function App() {
-    return (
-        <div>
+    return (<div>
             <HeaderComponent/>
+            <WelcomeComponent/>
             <ModalComponent/>
-            <SignUpPage/>
-            <FooterComponent/>
-
-        </div>
-    );
+        </div>);
 }
+
 
 export default App;

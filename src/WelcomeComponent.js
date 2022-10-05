@@ -1,6 +1,6 @@
 import React from 'react';
-import backgroundImage from '../images/Sandy_Bus-27_Single-09.jpg';
-import backgroundImageTwo from '../images/Sandy_Tech-22_Single-09.jpg';
+import backgroundImage from './images/Sandy_Bus-27_Single-09.jpg';
+import backgroundImageTwo from './images/Sandy_Tech-22_Single-09.jpg';
 
 const WelcomeComponent = () => {
     return (
