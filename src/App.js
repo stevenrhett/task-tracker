@@ -1,3 +1,4 @@
+
 import './index.css';
 import PublicLoginPage from "./PublicLoginPage";
 import HeaderComponent from "./HeaderComponent";
@@ -16,5 +17,6 @@ function App() {
         </div>
     );
 }
+
 
 export default App;
