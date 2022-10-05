@@ -1,3 +1,4 @@
+
 import SignUpPage from "./SignUpPage";
 import LogInForm from "./LogInForm";
 
@@ -21,12 +22,30 @@ function App() {
 
       <HeaderComponent/>
 
+import './index.css';
+import PublicLoginPage from "./PublicLoginPage";
+import HeaderComponent from "./HeaderComponent";
+import FooterComponent from "./FooterComponent";
+import LogInForm from "./LogInForm";
+
+function App() {
+    return (
+        <div>
+
+
+            <HeaderComponent/>
+            <PublicLoginPage/>
+            <FooterComponent/>
+
 
       <SignUpPage/>
 <FooterComponent/>
 
   </div>
   );
-}
 
+        </div>
+    );
+
+}
 export default App;
