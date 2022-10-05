@@ -8,7 +8,7 @@ import DisplayAllTasks from "./DisplayAllTasks";
 function App() {
   return(
   <div>
-      <DisplayAllTasks/>
+
 
 
   </div>
