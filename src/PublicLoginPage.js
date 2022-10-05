@@ -5,7 +5,7 @@ const PublicLoginPage = () => {
         <div>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
-                    {/*<!-- head -->*/}
+
                     <thead className="text-orange-400">
                     <tr>
                         <th>
@@ -20,7 +20,7 @@ const PublicLoginPage = () => {
                     </tr>
                     </thead>
                     <tbody className="text-teal-600">
-                    {/*<!-- row 1 -->*/}
+
                     <tr>
                         <th>
                             <label>
@@ -32,7 +32,7 @@ const PublicLoginPage = () => {
                                 <div className="avatar">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
-                                            <img src="https://placeimg.com/80/80/people"/>
+                                            <img src="https://placeimg.com/80/80/people" alt="alt"/>
                                         </div>
                                     </label>
                                 </div>
@@ -52,7 +52,7 @@ const PublicLoginPage = () => {
                             <button className="btn btn-ghost btn-xs">details</button>
                         </th>
                     </tr>
-                    {/*<!-- row 2 -->*/}
+
                     <tr>
                         <th>
                             <label>
@@ -64,7 +64,7 @@ const PublicLoginPage = () => {
                                 <div className="avatar">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
-                                            <img src="https://placeimg.com/80/80/people"/>
+                                            <img src="https://placeimg.com/80/80/people" alt="alt"/>
                                         </div>
                                     </label>
                                 </div>
@@ -84,7 +84,7 @@ const PublicLoginPage = () => {
                             <button className="btn btn-ghost btn-xs">details</button>
                         </th>
                     </tr>
-                    {/*<!-- row 3 -->*/}
+
                     <tr>
                         <th>
                             <label>
@@ -96,7 +96,7 @@ const PublicLoginPage = () => {
                                 <div className="avatar">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
-                                            <img src="https://placeimg.com/80/80/people"/>
+                                            <img src="https://placeimg.com/80/80/people" alt="alt"/>
                                         </div>
                                     </label>
                                 </div>
@@ -116,7 +116,7 @@ const PublicLoginPage = () => {
                             <button className="btn btn-ghost btn-xs">details</button>
                         </th>
                     </tr>
-                    {/*<!-- row 4 -->*/}
+
                     <tr>
                         <th>
                             <label>
@@ -128,7 +128,7 @@ const PublicLoginPage = () => {
                                 <div className="avatar">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
-                                            <img src="https://placeimg.com/80/80/people"/>
+                                            <img src="https://placeimg.com/80/80/people" alt="alt"/>
                                         </div>
                                     </label>
                                 </div>
@@ -149,7 +149,7 @@ const PublicLoginPage = () => {
                         </th>
                     </tr>
                     </tbody>
-                    {/*<!-- foot -->*/}
+
                     <tfoot className="text-orange-400">
                     <tr>
                         <th></th>
@@ -163,7 +163,7 @@ const PublicLoginPage = () => {
 
                 </table>
             </div>
-            {/*END*/}
+
 
 
         </div>
