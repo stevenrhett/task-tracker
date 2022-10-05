@@ -3,8 +3,8 @@ import React from 'react';
 const HeaderComponent = () => {
     return (
         <div>
-            <div className="flex justify-between p-4 border-b-2 border-gray-300">
-                <div className="font-bold text-teal-600 text-2xl">ULTRA<span className="text-orange-400">Task</span></div>
+            <div className="flex flex-col md:flex-row justify-between items-center px-20 md:h-28 p-2 border-b-2 border-gray-300">
+                <div className="font-bold text-teal-600 text-4xl">ULTRA<span className="text-orange-400">Task</span></div>
                 <div className="flex">
 
                     <ul className="menu-horizontal space-x-4">

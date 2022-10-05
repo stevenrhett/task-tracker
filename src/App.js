@@ -1,22 +1,18 @@
-import SignUpPage from "./SignUpPage";
-import LogInForm from "./LogInForm";
+import './index.css';
 import HeaderComponent from "./HeaderComponent";
+import LogInForm from "./LogInForm";
 import FooterComponent from "./FooterComponent";
-
-{/*feature/log-in-sign-up*/}
-
+import MeetTheTeam from "./MeetTheTeam";
 
 function App() {
-  return(
-  <div>
-      <HeaderComponent/>
+    return (
+        <div>
+            <HeaderComponent/>
+            <MeetTheTeam/>
+            <FooterComponent/>
+        </div>
 
-
-      <SignUpPage/>
-<FooterComponent/>
-      {/*main*/}
-  </div>
-  );
+    );
 }
 
 export default App;
