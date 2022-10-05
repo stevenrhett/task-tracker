@@ -5,11 +5,8 @@ const PublicUserLogin = () => {
         <div>
             <div className="overflow-x-auto">
                 <table className="table w-full">
-
-
                     <tbody className="text-teal-600">
-
-                    <tr >
+                    <tr>
                         <th>
                             <label>
                                 <input type="checkbox" className="checkbox bg-orange-400"/>
@@ -19,7 +16,6 @@ const PublicUserLogin = () => {
                         <td>Learn what ARP means?</td>
                         <td>Computer Science</td>
                     </tr>
-
                     <tr>
                         <th>
                             <label>
@@ -30,7 +26,6 @@ const PublicUserLogin = () => {
                         <td>Read Moby Dick</td>
                         <td>English Lit</td>
                     </tr>
-
                     <tr>
                         <th>
                             <label>
@@ -41,7 +36,6 @@ const PublicUserLogin = () => {
                         <td>Learn times tables</td>
                         <td>Math</td>
                     </tr>
-
                     </tbody>
                 </table>
             </div>
