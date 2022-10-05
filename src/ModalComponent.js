@@ -21,7 +21,6 @@ const ModalComponent = () => {
 
                     </div>
 
-
                     <div className=" flex justify-between modal-action">
                         <div className="py-2 px-4">
                             <input type="checkbox" className="w-4 h-4"/><span className="font-bold ml-1">Private</span>
