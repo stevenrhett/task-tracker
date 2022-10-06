@@ -3,6 +3,9 @@ import HeaderComponent from "./HeaderComponent";
 import FooterComponent from "./FooterComponent";
 import MeetTheTeam from "./MeetTheTeam";
 import WelcomeComponent from "./WelcomeComponent";
+import {Outlet} from "react-router-dom";
+import CreateTaskB from "./CreateTaskB";
+
 
 
 function App() {
@@ -11,7 +14,7 @@ function App() {
 
             <Outlet/>
 
-
+            <CreateTaskB/>
 
 
 
