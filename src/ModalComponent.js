@@ -46,9 +46,9 @@ const ModalComponent = () => {
                         <div className="">
                             <ul className="menu-horizontal space-x-4">
 
-                                <li className="font-bold text-black py-2 px-4  hover:text-teal-700 hover:border-teal-700"><a href="{}">Cancel</a>
+                                <li className="font-bold text-black py-2 px-4  hover:text-teal-700 hover:border-teal-700"><a href="#">Cancel</a>
                                 </li>
-                                <li className="font-bold text-white bg-teal-600 py-2 px-4 rounded-full hover:bg-teal-700"><a href="{}">Save task</a></li>
+                                <li className="font-bold text-white bg-teal-600 py-2 px-4 rounded-full hover:bg-teal-700"><a href="#">Save task</a></li>
 
                                 <li className="font-bold text-black py-2 px-4  hover:text-teal-700 hover:border-teal-700">
                                     <a href="">Cancel</a>
