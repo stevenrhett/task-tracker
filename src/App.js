@@ -1,16 +1,14 @@
 import './index.css';
-import PublicLoginPage from "./PublicLoginPage";
 import HeaderComponent from "./HeaderComponent";
 import FooterComponent from "./FooterComponent";
-import {Outlet} from "react-router-dom";
 import MeetTheTeam from "./MeetTheTeam";
+import WelcomeComponent from "./WelcomeComponent";
 
 
 function App() {
-
-    return (
-        <div>
+    return (<div>
             <HeaderComponent/>
+
             <Outlet/>
 
 
@@ -26,4 +24,5 @@ function App() {
 
         </div>
     );}
+
 export default App;
