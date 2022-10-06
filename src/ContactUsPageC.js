@@ -3,21 +3,21 @@ import React from 'react';
 const ContactUsPageC = () => {
     return (
         <div>
-            <h1>Contact Us</h1>
-            <form>
+            <h1 className="mx-auto mt-5 text-center text-2xl font-bold text-[#2A9D8F]">Contact Us</h1>
+            <form className="flex flex-col justify-center items-center space-y-10 mt-24">
                 <div>
-                    <input type="text"placeholder="Your Name"/>
-                    <input type="text"placeholder="Your Email"/>
+                    <input type="text"placeholder="Your Name" className="border-b-2 border-gray-500"/>
+                    <input type="text"placeholder="Your Email" className="border-b-2 border-gray-500 ml-5"/>
                 </div>
                 <div>
-                    <input type="text" placeholder="Phone Number"/>
-                    <input type="text" placeholder="Country"/>
+                    <input type="text" placeholder="Phone Number" className="border-b-2 border-gray-500"/>
+                    <input type="text" placeholder="Country" className="border-b-2 border-gray-500 ml-5"/>
                 </div>
                 <div>
-                    <input type="text"placeholder="Company Name"/>
-                    <input type="text"/>
+                    <input type="text"placeholder="Company Name" className="border-b-2 border-gray-500"/>
+                    <input type="text" placeholder="Interested In" className="border-b-2 border-gray-500 ml-5"/>
                 </div>
-                <input type="text" placeholder="Message"/>
+                <input type="text" placeholder="Message" className="border-b-2 border-gray-500 w-94 w-[24rem]"/>
             </form>
         </div>
     );
