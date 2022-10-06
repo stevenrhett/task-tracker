@@ -1,28 +1,20 @@
 import './index.css';
 import HeaderComponent from "./HeaderComponent";
 import FooterComponent from "./FooterComponent";
-import MeetTheTeam from "./MeetTheTeam";
-import WelcomeComponent from "./WelcomeComponent";
+import NewLoginPage from "./NewLoginPage";
 
 
 function App() {
     return (<div>
-            <HeaderComponent/>
+<HeaderComponent/>
 
-            <Outlet/>
+    <Outlet/>
 
-
-
-
-
-
-                <FooterComponent/>
-
-
-
-
+  <FooterComponent/>    
 
         </div>
-    );}
+
+);
+}
 
 export default App;
