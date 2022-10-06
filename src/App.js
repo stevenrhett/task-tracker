@@ -8,12 +8,21 @@ import WelcomeComponent from "./WelcomeComponent";
 function App() {
     return (<div>
             <HeaderComponent/>
-            <WelcomeComponent/>
-            <MeetTheTeam/>
-            <FooterComponent/>
+
+            <Outlet/>
+
+
+
+
+
+
+                <FooterComponent/>
+
+
+
+
+
         </div>
+    );}
 
-
-    );
-}
 export default App;
