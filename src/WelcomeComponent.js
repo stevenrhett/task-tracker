@@ -9,7 +9,6 @@ const WelcomeComponent = () => {
                 <div className="">
                     <h1 className="text-teal-600 font-bold text-4xl text-center">Organize your <br/> work and life, finally.</h1>
                 </div>
-
                 <div className="text-center">
                     <h2>Become focused, organized, and calm with TaskTracker. The<br/> world’s #1 task manager and to-do list app.</h2>
                 </div>
@@ -23,11 +22,7 @@ const WelcomeComponent = () => {
                 <div className="w-1/2"><img src={backgroundImage} alt=""/></div>
                 <div className="w-1/2"><img src={backgroundImageTwo} alt=""/></div>
             </div>
-
         </div>
-
     );
 };
-
 export default WelcomeComponent;
-

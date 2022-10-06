@@ -6,6 +6,7 @@ const SignUpPage = () => {
     return (
         <div>
             <SignUpForm/>
+
         </div>
     );
 };

@@ -19,11 +19,8 @@ const HeaderComponent = () => {
                                   className="font-bold text-white bg-teal-600 py-2 px-4 rounded-full hover:bg-teal-700">Sign
                             Up</Link></li>
                     </ul>
-
                 </div>
-
             </div>
-        </div>);
-};
-
+        </div>
+        );};
 export default HeaderComponent;
