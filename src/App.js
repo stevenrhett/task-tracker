@@ -6,12 +6,15 @@ import NewLoginPage from "./NewLoginPage";
 
 function App() {
     return (<div>
+<HeaderComponent/>
 
-            <NewLoginPage/>
+    <Outlet/>
+
+  <FooterComponent/>    
 
         </div>
 
-
-    );
+);
 }
+
 export default App;
