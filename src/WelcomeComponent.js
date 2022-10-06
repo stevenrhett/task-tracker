@@ -38,5 +38,4 @@ const WelcomeComponent = () => {
 
     );
 };
-
 export default WelcomeComponent;

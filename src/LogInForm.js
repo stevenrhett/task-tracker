@@ -1,11 +1,11 @@
 import React from 'react';
 
-const SignUpForm = () => {
+const LogInForm = () => {
     return (
         <div className="flex md:flex-row mx-auto w-1/5 mt-10">
             <form className="flex flex-col space-y-4">
 
-         <div className="flex border border-black rounded-full p-3 shadow-lg cursor-pointer">
+                <div className="flex border border-black rounded-full p-3 shadow-lg cursor-pointer">
                     <svg width="45" height="24" viewBox="0 0 45 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                         <g clipPath="url(#clip0_122_24)">
@@ -27,10 +27,9 @@ const SignUpForm = () => {
                                 <rect width="45" height="33" fill="white"/>
                             </clipPath>
                         </defs>
+                    </svg>
 
-
-
-                    <p className="ml-4 text-xl font-bold">Continue with Google</p>
+                        <p className="ml-4 text-xl font-bold">Continue with Google</p>
                 </div>
                 <div className="flex border border-black rounded-full p-3 shadow-lg cursor-pointer">
                     <svg width="47" height="24" viewBox="0 0 47 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +47,8 @@ const SignUpForm = () => {
 
                 <div className="flex-1 border border-black rounded-full p-3 shadow-lg cursor-pointer">
 
-                    <svg className="" width="47" height="24" viewBox="0 0 47 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="" width="47" height="24" viewBox="0 0 47 33" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" clipRule="evenodd"
                               d="M25.4303 15.1432V15.0965C25.4166 15.1122 25.3976 15.1279 25.3857 15.1432H25.4303Z"
                               fill="#3B82F6"/>
@@ -73,7 +73,7 @@ const SignUpForm = () => {
 
             </form>
         </div>
-    );
+);
 };
 
-export default SignUpForm
+export default LogInForm;
