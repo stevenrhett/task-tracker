@@ -1,6 +1,11 @@
 import React from 'react';
-
+import {useState} from "react";
 const SignUpForm = () => {
+    const [username, setUsername] = useState("")
+    const USER_DATA_API_URL = "https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/UsersB?select=*"
+
+
+
     return (
         <div className="mx-auto w-1/5 mt-10">
             <form className="flex flex-col space-y-4">
