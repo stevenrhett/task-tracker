@@ -4,6 +4,7 @@ import HeaderComponent from "./HeaderComponent";
 import FooterComponent from "./FooterComponent";
 import {Outlet} from "react-router-dom";
 import MeetTheTeam from "./MeetTheTeam";
+import DisplayAllTasks from "./DisplayAllTasks";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <div>
             <HeaderComponent/>
             <Outlet/>
-
+            <DisplayAllTasks/>
 
 
 
