@@ -1,17 +1,32 @@
-import SignUpPage from "./SignUpPage";
-import LogInForm from "./LogInForm";
+import './index.css';
+import PublicLoginPage from "./PublicLoginPage";
 import HeaderComponent from "./HeaderComponent";
+import LogInForm from "./LogInForm";
 import FooterComponent from "./FooterComponent";
 import {Outlet} from "react-router-dom"
 
-{/*feature/log-in-sign-up*/}
+import MeetTheTeam from "./MeetTheTeam";
 
 
 function App() {
+
   return(
   <div>
       <HeaderComponent/>
       <Outlet/>
+
+    return (
+        <div>
+            <HeaderComponent/>
+
+            <MeetTheTeam/>
+            <FooterComponent/>
+        </div>
+
+
+
+            <PublicLoginPage/>
+            <FooterComponent/>
 
 
 <FooterComponent/>
@@ -19,5 +34,6 @@ function App() {
   </div>
   );
 }
+
 
 export default App;
