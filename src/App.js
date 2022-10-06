@@ -1,31 +1,19 @@
 import './index.css';
-import PublicLoginPage from "./PublicLoginPage";
 import HeaderComponent from "./HeaderComponent";
 import FooterComponent from "./FooterComponent";
+import MeetTheTeam from "./MeetTheTeam";
+import WelcomeComponent from "./WelcomeComponent";
 
 
 function App() {
-
-    return (
-        <div>
+    return (<div>
             <HeaderComponent/>
-            <Outlet/>
-
-            return (
-            <div>
-                <HeaderComponent/>
-
-                <MeetTheTeam/>
-                <FooterComponent/>
-            </div>
-
-
-            <PublicLoginPage/>
+            <WelcomeComponent/>
+            <MeetTheTeam/>
             <FooterComponent/>
-
-
-            <FooterComponent/>
-            {/*main*/}
         </div>
-    );}
+
+
+    );
+}
 export default App;
