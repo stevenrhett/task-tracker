@@ -1,8 +1,51 @@
 import React from 'react';
 import {useState} from "react";
 const SignUpForm = () => {
-    const [username, setUsername] = useState("")
-    const USER_DATA_API_URL = "https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/UsersB?select=*"
+    const [name, setName] = useState("")
+    const [password, setPassword] = useState("")
+    const [email, setEmail] = useState("")
+    const USER_DATA_API_URL = "https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/UsersB"
+
+
+    const handlePassInput = (event) => {
+        setPassword(event.target.value)
+    }
+    const handleNameInput = (event) => {
+
+        setName(event.target.value)
+
+
+
+    }
+    const handleEmailInput = (event) => {
+        setEmail(event.target.value);
+    }
+
+    const addNewUser = async () => {
+
+        const newUser = [{name:name, email:email, password:password}]
+
+        const response = await fetch(USER_DATA_API_URL, {
+            method:"POST",
+            headers: {
+                "Content-Type":"application/json",
+                apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ",
+                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ",
+
+            },
+            body: JSON.stringify(newUser)
+
+
+        });
+        //const result = await response.json()
+        //setAllTaskData(result)
+        //console.log(result)
+        //return result
+
+
+    }
+
+
 
 
 
@@ -39,10 +82,10 @@ const SignUpForm = () => {
                 <button className="btn btn-circle btn-outline w-full">Continue with Linkedin</button>
                 */}
                 <hr/>
-                <input className="border rounded-full border-black pl-3 p-3" type="text" placeholder="Full name"/>
-                <input className="border rounded-full border-black pl-3 p-3" type="email" placeholder="Email"/>
-                <input className="border rounded-full border-black pl-3 p-3" type="password" placeholder="Password"/>
-                <button className="btn-md text-white text-lg font-bold bg-[#2A9D8F] rounded-full border-0">Sign up</button>
+                <input onChange={handleNameInput} className="border rounded-full border-black pl-3 p-3" type="text" placeholder="Full name"/>
+                <input onChange={handleEmailInput} className="border rounded-full border-black pl-3 p-3" type="email" placeholder="Email"/>
+                <input onChange={handlePassInput} className="border rounded-full border-black pl-3 p-3" type="password" placeholder="Password"/>
+                <button onClick={async () => {await addNewUser()}} className="btn-md text-white text-lg font-bold bg-[#2A9D8F] rounded-full border-0">Sign up</button>
                 <p className="text-xs text-center">By signing up, you agree to our <u>Terms of Use</u> and our <u>Private Policy</u></p>
                 <hr/>
                 <p className="text-xs text-center">Already have an account?<u className="text-orange-500 underline pl-1 cursor-pointer">Log in</u></p>

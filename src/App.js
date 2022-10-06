@@ -13,21 +13,17 @@ function App() {
             <HeaderComponent/>
             <Outlet/>
 
-            return (
-            <div>
-                <HeaderComponent/>
 
-                <MeetTheTeam/>
+
+
+
+
                 <FooterComponent/>
-            </div>
 
 
-            <PublicLoginPage/>
-            <FooterComponent/>
 
 
-            <FooterComponent/>
-            {/*main*/}
+
         </div>
     );}
 export default App;
