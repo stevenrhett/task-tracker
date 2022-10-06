@@ -1,32 +1,33 @@
-import SignUpPage from "./SignUpPage";
-import LogInForm from "./LogInForm";
-
-import TaskCardB from "./TaskCardB";
-import DisplayAllTasks from "./DisplayAllTasks";
-
+import './index.css';
+import PublicLoginPage from "./PublicLoginPage";
 import HeaderComponent from "./HeaderComponent";
 import FooterComponent from "./FooterComponent";
-
-
-
+import {Outlet} from "react-router-dom";
+import MeetTheTeam from "./MeetTheTeam";
 
 
 function App() {
-  return(
-  <div>
+
+    return (
+        <div>
+            <HeaderComponent/>
+            <Outlet/>
+
+            return (
+            <div>
+                <HeaderComponent/>
+
+                <MeetTheTeam/>
+                <FooterComponent/>
+            </div>
 
 
+            <PublicLoginPage/>
+            <FooterComponent/>
 
 
-
-      <HeaderComponent/>
-
-
-      <SignUpPage/>
-<FooterComponent/>
-
-  </div>
-  );
-}
-
+            <FooterComponent/>
+            {/*main*/}
+        </div>
+    );}
 export default App;
