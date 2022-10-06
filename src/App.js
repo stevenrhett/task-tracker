@@ -2,7 +2,14 @@ import './index.css';
 import HeaderComponent from "./HeaderComponent";
 import FooterComponent from "./FooterComponent";
 
+
+
 import {Outlet} from "react-router-dom";
+
+
+
+
+
 
 
 
@@ -15,11 +22,13 @@ function App() {
 <HeaderComponent/>
 
 
-    return (
-        <div>
-            <HeaderComponent/>
+
+            
+
+  
             <Outlet/>
             
+
 
 
 
