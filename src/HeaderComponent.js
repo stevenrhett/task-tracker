@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const HeaderComponent = () => {
@@ -18,6 +19,5 @@ const HeaderComponent = () => {
         </div>
     </div>);
 };
-
 
 export default HeaderComponent;
