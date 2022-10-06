@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SignUpForm = () => {
+const LogInForm = () => {
     return (
         <div className="flex md:flex-row mx-auto w-1/5 mt-10">
             <form className="flex flex-col space-y-4">
@@ -76,4 +76,4 @@ const SignUpForm = () => {
     );
 };
 
-export default SignUpForm
+export default LogInForm;

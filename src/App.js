@@ -3,11 +3,18 @@ import PublicLoginPage from "./PublicLoginPage";
 import HeaderComponent from "./HeaderComponent";
 import LogInForm from "./LogInForm";
 import FooterComponent from "./FooterComponent";
+import {Outlet} from "react-router-dom"
 
 import MeetTheTeam from "./MeetTheTeam";
 
 
 function App() {
+
+  return(
+  <div>
+      <HeaderComponent/>
+      <Outlet/>
+
     return (
         <div>
             <HeaderComponent/>
@@ -17,13 +24,15 @@ function App() {
         </div>
 
 
+
             <PublicLoginPage/>
             <FooterComponent/>
 
 
-        </div>
-
-    );
+<FooterComponent/>
+      {/*main*/}
+  </div>
+  );
 }
 
 

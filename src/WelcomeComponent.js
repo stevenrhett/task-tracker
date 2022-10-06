@@ -1,3 +1,15 @@
+
+import React from 'react';
+
+const WelcomeComponent = () => {
+    return (
+        <div>
+            <p>Placeholder Welcome Text</p>
+        </div>
+    );
+};
+
+
 import React from 'react';
 
 import backgroundImage from '../images/Sandy_Bus-27_Single-09.jpg';
@@ -57,5 +69,6 @@ const WelcomeComponent = () => {
 
     );
 };
+
 
 export default WelcomeComponent;
