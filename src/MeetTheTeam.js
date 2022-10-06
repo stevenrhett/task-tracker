@@ -7,7 +7,7 @@ const MeetTheTeam = () => {
             <div className="grid flex-grow h-32 card bg-orange-400 rounded-box place-items-center">
                 <div className="avatar">
                     <div className="w-24 rounded mx-4">
-                        <img src="https://placeimg.com/192/192/people"/>
+                        <img src="https://placeimg.com/192/192/people" alt="alt"/>
                     </div>
                 </div>
             </div>
@@ -16,7 +16,7 @@ const MeetTheTeam = () => {
             <div className="grid flex-grow h-32 card bg-teal-500 rounded-box place-items-center">
                 <div className="avatar">
                     <div className="w-24 rounded mx-4">
-                        <img src="https://placeimg.com/192/192/people"/>
+                        <img src="https://placeimg.com/192/192/people" alt="alt"/>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@ const MeetTheTeam = () => {
             <div className="grid flex-grow h-32 card bg-orange-400 rounded-box place-items-center">
                 <div className="avatar">
                     <div className="w-24 rounded mx-4">
-                        <img src="https://placeimg.com/192/192/people"/>
+                        <img src="https://placeimg.com/192/192/people" alt="alt"/>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@ const MeetTheTeam = () => {
             <div className="grid flex-grow h-32 card bg-teal-500 rounded-box place-items-center">
                 <div className="avatar">
                     <div className="w-24 rounded mx-4">
-                        <img src="https://placeimg.com/192/192/people"/>
+                        <img src="https://placeimg.com/192/192/people" alt="alt"/>
                     </div>
                 </div>
             </div>
