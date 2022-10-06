@@ -62,7 +62,7 @@ const DisplayAllTasks = () => {
 
             <p onClick={async () => {await getTaskData()}}>All tasks</p>
             <p onClick={async () => {await getCompletedTasks()}}>Completed Tasks</p>
-            {allTaskData.map(task => <TaskCardB {...task} />)}
+            {allTaskData.map(task => <TaskCardB key="id" {...task} />)}
         </div>
     );
 };

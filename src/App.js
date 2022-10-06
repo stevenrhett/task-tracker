@@ -1,16 +1,36 @@
 import './index.css';
 import HeaderComponent from "./HeaderComponent";
 import FooterComponent from "./FooterComponent";
-import NewLoginPage from "./NewLoginPage";
+
+import {Outlet} from "react-router-dom";
+
+
+
+
+
 
 
 function App() {
     return (<div>
 <HeaderComponent/>
 
-    <Outlet/>
 
-  <FooterComponent/>    
+    return (
+        <div>
+            <HeaderComponent/>
+            <Outlet/>
+            
+
+
+
+
+
+                <FooterComponent/>
+
+
+    
+
+   
 
         </div>
 
