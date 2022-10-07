@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import TaskCardB from "./TaskCardB";
 import NewTaskCard from "./NewTaskCard";
 import ModalComponent from "./ModalComponent";
+
 
 const MainTaskPageB = () => {
     const [description, setDescription] = useState('');
@@ -135,10 +136,17 @@ const MainTaskPageB = () => {
 
 
 
-    //useEffect(() => {
-    // console.log("change detected")
-    //setAllTaskData()
-    // },[allTaskData])
+    useEffect( () => {
+     console.log("change detected")
+        const newFunc = async () => {
+         const newData = await getTaskData()
+            setAllTaskData(newData)
+        }
+        //getTaskData()
+        newFunc()
+
+    //setAllTaskData[]
+     },[])
 
 
 
