@@ -3,9 +3,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=stevenrhett&label=Profile%20views&color=0e75b6&style=flat" alt="stevenrhett" /> </p>
 
-- 🔭 We currently working on THE TASK TRACKER 
+- 🔭 We currently working on THE TASK TRACKER  **Ultra Task**
 
-**Ultra Task**
+
 
 -Demo link
 
@@ -19,13 +19,13 @@ HTML/CSS: **Tailwind and DaisyUI**
 Frontend: **React**
 Backend: **Supabase**
 
-- 👯 We looking to collaborate on 
+- 👯 We looking to collaborate on **all React projects**
 
-**all React projects**
 
-- 💬 Ask us about 
 
-**React**
+- 💬 Ask us about **React**
+
+
 
 - Screenshots
 
@@ -36,13 +36,13 @@ Backend: **Supabase**
 **Welcome Page**
 
 
-- Credits
+- Credits **Davola, Didier, Justin, Kim, and Steve**
 
-**Davola, Didier, Justin, Kim, and Steve**
 
-- License
 
-none
+- License none
+
+
 
 
 <h3 align="left">Connect with me:</h3>
