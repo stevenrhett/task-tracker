@@ -5,47 +5,31 @@
 
 - 🔭 We currently working on THE TASK TRACKER  **Ultra Task**
 
-
-
--Demo link
-
+- Demo link
 
 - 🌱We currently using 
 
-Prototype/Mockup: **Figma**
-Version Control: **Github** (one shared repo/team)
-Project Management: **Github Issues**
-HTML/CSS: **Tailwind and DaisyUI**
-Frontend: **React**
-Backend: **Supabase**
+   Prototype/Mockup: **Figma**<br>
+   Version Control: **Github** (one shared repo/team)<br>
+   Project Management: **Github Issues**<br>
+   HTML/CSS: **Tailwind and DaisyUI**<br>
+   Frontend: **React**<br>
+   Backend: **Supabase**<br>
 
 - 👯 We looking to collaborate on **all React projects**
 
-
-
 - 💬 Ask us about **React**
 
-
-
 - Screenshots
+<img width="700" alt="ScreenShot" src="https://user-images.githubusercontent.com/79732886/194612485-e43771b3-ed2e-4276-a072-c8504dd0a71c.png">
 
-**Mockup with Figma**
-
-
-
-**Welcome Page**
-
+<img width="700" alt="ScreenShot" src="https://user-images.githubusercontent.com/79732886/194612618-009a32e1-fe30-45a7-a81b-e3929435b2e4.png">
 
 - Credits **Davola, Didier, Justin, Kim, and Steve**
 
-
-
 - License none
 
-
-
-
-<h3 align="left">Connect with me:</h3>
+<h3 align="left"></h3>
 <p align="left">
 </p>
 
