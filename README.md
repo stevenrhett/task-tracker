@@ -11,9 +11,10 @@
 ## Screenshots:
 
 **Mockup with Figma**
-![Screen Shot 2022-10-06 at 12.42.54 AM.png](../assets/Screen_Shot_2022-10-06_at_12.42.54_AM_1665147067367_0.png)
+![Screen Shot 2022-10-06 at 12.42.54 AM.png](src/images/Screen Shot 2022-10-06 at 12.42.54 AM.png)
+
 **Welcome Page**
-![Screen Shot 2022-10-06 at 12.45.13 AM.png](../assets/Screen_Shot_2022-10-06_at_12.45.13_AM_1665147005304_0.png)
+![](src/images/Screen Shot 2022-10-06 at 12.45.13 AM.png)
 
 ## Technologies
 
