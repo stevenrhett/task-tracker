@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const LogInForm = () => {
     return (
@@ -67,8 +68,8 @@ const LogInForm = () => {
                 <input className="border rounded-full border-black pl-3 p-3" type="password" placeholder="Password"/>
                 <button className="btn-md text-white text-lg font-bold bg-[#2A9D8F] rounded-full border-0">Log in
                 </button>
-                <p className="text-xs text-center">Don't have an account?<u
-                    className="text-orange-500 underline pl-1 cursor-pointer">Sign up</u></p>
+                <p className="text-xs text-center">Don't have an account?<Link to="/signuppage"><u
+                    className="text-orange-500 underline pl-1 cursor-pointer">Sign up</u></Link></p>
                 <hr/>
 
             </form>
