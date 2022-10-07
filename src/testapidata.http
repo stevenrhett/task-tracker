@@ -90,7 +90,7 @@ Prefer: return=representation
 Content-Type: application/json
 
 {
-  "completed": "false"
+  "completed": "true"
 }
 
 ###
