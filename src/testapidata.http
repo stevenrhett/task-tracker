@@ -94,6 +94,24 @@ Content-Type: application/json
 }
 
 ###
+# curl -X PATCH 'https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/TaskB?some_column=eq.someValue'
+#-H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY2NDkyMzgxMiwiZXhwIjoxOTgwNDk5ODEyfQ.LmhHeYH22nGxE0XYkt5fP6KBk2MjK-RfSBHPW44Dtuc"
+#-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY2NDkyMzgxMiwiZXhwIjoxOTgwNDk5ODEyfQ.LmhHeYH22nGxE0XYkt5fP6KBk2MjK-RfSBHPW44Dtuc"
+#-H "Content-Type: application/json"
+#-H "Prefer: return=representation"
+#-d '{ "other_column": "otherValue" }'
+PATCH https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/TaskB?id=eq.2
+apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY2NDkyMzgxMiwiZXhwIjoxOTgwNDk5ODEyfQ.LmhHeYH22nGxE0XYkt5fP6KBk2MjK-RfSBHPW44Dtuc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY2NDkyMzgxMiwiZXhwIjoxOTgwNDk5ODEyfQ.LmhHeYH22nGxE0XYkt5fP6KBk2MjK-RfSBHPW44Dtuc
+Prefer: return=representation
+Content-Type: application/json
+
+{
+  "completed": "true"
+}
+
+###
+
 
 
 

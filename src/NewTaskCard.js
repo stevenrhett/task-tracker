@@ -30,25 +30,22 @@ const NewTaskCard = ({title, description, privacy,id,created_at, completed}) => 
 
         const response = await fetch(`https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/TaskB?id=eq.${id}`, {
             method:"PATCH",
+            body: JSON.stringify({completed:true}),
+            //data: ({completed:true}),
             headers: {
                 "Content-Type":"application/json",
-                apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ",
-                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ",
+                apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY2NDkyMzgxMiwiZXhwIjoxOTgwNDk5ODEyfQ.LmhHeYH22nGxE0XYkt5fP6KBk2MjK-RfSBHPW44Dtuc",
+                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY2NDkyMzgxMiwiZXhwIjoxOTgwNDk5ODEyfQ.LmhHeYH22nGxE0XYkt5fP6KBk2MjK-RfSBHPW44Dtuc",
                 Prefer: "return=representation",
-                data:
-
-                    JSON.stringify({completed:true})
 
             },
 
 
-
-
-
         });
-
-        console.log(id)
-
+        const newResponse = await response.json()
+        //console.log(id)
+        console.log(response)
+        console.log(newResponse)
     }
 
 
