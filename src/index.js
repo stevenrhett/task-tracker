@@ -7,6 +7,9 @@ import WelcomeComponent from "./WelcomeComponent";
 import SignUpPage from "./SignUpPage";
 import LogInPage from "./LogInPage";
 import MainTaskPageB from "./MainTaskPageB";
+import AboutUsPageB from "./AboutUsPageB";
+import ContactUsPageC from "./ContactUsPageC";
+import MeetTheTeam from "./MeetTheTeam";
 
 
 const router = createBrowserRouter([
@@ -29,6 +32,18 @@ const router = createBrowserRouter([
             {
                 path: "/maintaskpage",
                 element: <MainTaskPageB/>
+            },
+            {
+                path: "/about",
+                element: <AboutUsPageB/>
+            },
+            {
+                path: "/contact",
+                element: <ContactUsPageC/>
+            },
+            {
+                path: "/team",
+                element: <MeetTheTeam/>
             },
         ]
     }

@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState} from "react";
+import {Link} from "react-router-dom";
 const SignUpForm = () => {
     const [name, setName] = useState("")
     const [password, setPassword] = useState("")
@@ -88,7 +89,7 @@ const SignUpForm = () => {
                 <button onClick={async () => {await addNewUser()}} className="btn-md text-white text-lg font-bold bg-[#2A9D8F] rounded-full border-0">Sign up</button>
                 <p className="text-xs text-center">By signing up, you agree to our <u>Terms of Use</u> and our <u>Private Policy</u></p>
                 <hr/>
-                <p className="text-xs text-center">Already have an account?<u className="text-orange-500 underline pl-1 cursor-pointer">Log in</u></p>
+                <p className="text-xs text-center">Already have an account?<Link to="/loginpage"> <u className="text-orange-500 underline pl-1 cursor-pointer">Log in</u></Link></p>
             </form>
         </div>
     );
