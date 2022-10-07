@@ -1,6 +1,6 @@
 # Project Title
 
-### THE TASK TRACKER **Ultra Task**'
+### THE TASK TRACKER **Ultra Task**
 
 ### Demo link :
 
@@ -15,11 +15,15 @@
 
 
 **Mockup with Figma**
-![Screen Shot 2022-10-06 at 12.42.54 AM.png](src/images/Screen Shot 2022-10-06 at 12.42.54 AM.png)
+
 
 
 **Welcome Page**
-![](src/images/Screen Shot 2022-10-06 at 12.45.13 AM.png)
+
+
+
+**Welcome Page**
+
 
 
 ### Technologies
