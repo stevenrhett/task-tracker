@@ -54,7 +54,7 @@ const NewTaskCard = ({title, description, privacy,id,created_at, completed, impo
 
     return (
 
-        <div className="flex justify-center border">
+        <div className="flex justify-center">
 
 
 

@@ -152,7 +152,7 @@ const MainTaskPageB = () => {
 
 
     return (
-        <div>
+        <div className="relative">
             <div className="flex flex-row text-orange-400 font-bold justify-center text-center">
                 <p onClick={async () => {await getImportantTasks()}} className="mx-2">Important</p>
                 <p onClick={async () => {await getCompletedTasks()}} className="mx-2">Completed Tasks</p>
@@ -176,6 +176,9 @@ const MainTaskPageB = () => {
             </div>
 
             {allTaskData.map(task => <NewTaskCard key="id" {...task} />)}
+            <form className="sticky bottom-0 right-0 ml-32">
+                <button className="rounded-md bg-teal-600 text-white p-3">Refresh</button>
+            </form>
         </div>
     );
 };
