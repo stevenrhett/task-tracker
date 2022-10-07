@@ -1,6 +1,7 @@
 import React from 'react';
 import backgroundImage from './images/Sandy_Bus-27_Single-09.jpg';
 import backgroundImageTwo from './images/Sandy_Tech-22_Single-09.jpg';
+import {Link} from "react-router-dom";
 
 const WelcomeComponent = () => {
     return (<div>
@@ -16,10 +17,10 @@ const WelcomeComponent = () => {
                 </div>
 
                 <div className="">
-                    <button
+                    <Link to="/signuppage"
                         className="font-normal text-2xl text-white bg-teal-600 py-2 px-4 rounded hover:bg-teal-700">Try
                         for free
-                    </button>
+                    </Link>
 
                 </div>
             </div>
