@@ -49,7 +49,7 @@ const LogInForm = () => {
                                 <a href="#" className="font-medium text-orange-400">Forgot Password?</a>
                             </div>
                         </div>
-                        <button
+                        <Link to="/maintaskpage"
                             className="w-full py-3 font-medium text-white bg-teal-600 hover:bg-teal-500 rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor"
@@ -58,15 +58,15 @@ const LogInForm = () => {
                                       d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
                             </svg>
                             <span>Login</span>
-                        </button>
-                        <p className="text-center">Not registered yet? <a href="#"
+                        </Link>
+                        <p className="text-center">Not registered yet? <Link to="/signuppage"
                                                                           className="text-orange-400 font-medium inline-flex space-x-1 items-center"><span>Register now </span><span><svg
                             xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor"
                             strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round"
                       d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-              </svg></span></a></p>
+              </svg></span></Link></p>
                     </div>
                 </form>
             </div>
