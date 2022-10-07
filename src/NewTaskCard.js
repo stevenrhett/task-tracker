@@ -24,6 +24,35 @@ const NewTaskCard = ({title, description, privacy,id,created_at}) => {
 
     }
 
+    const completeTask = async () => {
+
+
+
+        const response = await fetch(`https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/TaskB?id=eq.${id}`, {
+            method:"PATCH",
+            headers: {
+                "Content-Type":"application/json",
+                apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ",
+                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ",
+                Prefer: "return=representation"
+
+            },
+        body:
+        {
+            "completed": "true"
+        },
+
+
+
+    });
+
+
+
+    }
+
+
+
+
 
     return (
 
@@ -33,7 +62,7 @@ const NewTaskCard = ({title, description, privacy,id,created_at}) => {
 
             <div className="form-control">
                 <label className="label">
-                    <span className="label-text text-xl text-teal-600 font-bold mx-20">{privacy} Task</span>
+                    <span className="label-text text-xl text-teal-600 font-bold mx-20">{privacy} task</span>
 
                 </label>
                 <div className="border-2 w-96 h-24 mx-20">
@@ -47,7 +76,7 @@ const NewTaskCard = ({title, description, privacy,id,created_at}) => {
 
                     <div className="flex flex-row">
                         <div className="form-control">
-                            <label className="label cursor-pointer">
+                            <label  onClick={async () => {await completeTask()}} className="label cursor-pointer">
                                 <input type="checkbox" checked="checked" className="checkbox"/>
                             </label>
                         </div>
