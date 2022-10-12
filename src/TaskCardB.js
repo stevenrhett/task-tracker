@@ -1,6 +1,12 @@
 import React from 'react';
+import * as PropTypes from "prop-types";
 
 //The properties in this card will be determined by that pulled from the API, This is not meant to replace
+function TaskItem({task,deleteTask}) {
+    return;
+}
+
+TaskItem.propTypes = {deleteTask: PropTypes.func};
 //current work on the task card but to start getting some of the logic in place
 const TaskCardB = ({title, description, privacy,id}) => {
 
@@ -29,8 +35,7 @@ const TaskCardB = ({title, description, privacy,id}) => {
     }
 
 
-
-
+    let task;
     return (
         <div>
             <h1 className="justify-center flex mr-96">{title}</h1>
@@ -41,7 +46,10 @@ const TaskCardB = ({title, description, privacy,id}) => {
                     <div>
                         <p className="mt-8 ml-3">{description}</p>
                     </div>
-                    <p onClick={async () => {await deleteTask()}}>Delete</p>
+                    {/*<p onClick={async () => {await deleteTask()}}>Delete</p>*/}
+                    {/* FIRST ATTEMPT AT MAPPING the DELETE */}
+                    {task.map(task => ( <TaskItem task={task} deleteTask={deleteTask}/>
+                    ))}
                 </div>
                 <input type="checkbox"/>
             </div>
