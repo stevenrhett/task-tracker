@@ -77,9 +77,9 @@ const MainTaskPageB = () => {
     }
     //Start of filtering logic
 
-    const ALL_TASK_DATA_API_URL = "https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/TaskB?select=*"
-    const ALL_COMPLETED_API_URL = "https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/TaskB?completed=eq.true&select=*"
-    const IMPORTANT_TASKS_API_URL = "https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/TaskB?important=eq.true&select=*"
+    const ALL_TASK_DATA_API_URL = "https://edimwgfgsphnlyquzwnq.supabase.co/rest/v1/TaskB?select=*"
+    const ALL_COMPLETED_API_URL = "https://edimwgfgsphnlyquzwnq.supabase.co/rest/v1/TaskB?completed=eq.true&select=*"
+    const IMPORTANT_TASKS_API_URL = "https://edimwgfgsphnlyquzwnq.supabase.co/rest/v1/TaskB?important=eq.true&select=*"
 
     const currentDate = Date()
     const [allTaskData, setAllTaskData] = useState([])
