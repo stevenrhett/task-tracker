@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { supabase } from './supabaseClient'
-import Avatars from "./Avatars";
 
 export default function Auth() {
     const [loading, setLoading] = useState(false)
@@ -45,8 +44,6 @@ export default function Auth() {
                             Send magic link
                         </button>
                     </form>
-
-
                 )}
             </div>
         </div>
