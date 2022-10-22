@@ -9,7 +9,7 @@ const CreateTaskB = () => {
     const [created_date, setDate] = useState(new Date());
     const [important, setImportant] = useState("false")
     const dateNow = Date()
-    const ALL_TASK_DATA_API_URL ="https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/TaskB"
+    const ALL_TASK_DATA_API_URL ="https://edimwgfgsphnlyquzwnq.supabase.co/rest/v1/TaskB"
 
     const handleDescription = (event) => {
         setDescription(event.target.value)
@@ -71,8 +71,8 @@ const CreateTaskB = () => {
     return (
         <div>
             <div>
-                <input onChange={handleTitle} type="text"placeholder="Title"/>
-                <input onChange={handleDescription} type="text"placeholder="Description"/>
+                <input onChange={handleTitle} type="text" placeholder="Title"/>
+                <input onChange={handleDescription} type="text" placeholder="Description"/>
                 <input onClick={handlePrivacy} type="checkbox"/>
                 <input onClick={handleImportant} type="checkbox"/>
                 <button onClick={async () => {await addNewTask()}}>ADD TASK</button>

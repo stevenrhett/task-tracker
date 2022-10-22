@@ -7,7 +7,7 @@ const NewTaskCard = ({title, description, privacy,id,created_at, completed, impo
 
 
 
-        const response = await fetch(`https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/TaskB?id=eq.${id}`, {
+        const response = await fetch(`https://edimwgfgsphnlyquzwnq.supabase.co/rest/v1/TaskB?id=eq.${id}`, {
             method:"DELETE",
             headers: {
                 "Content-Type":"application/json",

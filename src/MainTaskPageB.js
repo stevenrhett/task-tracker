@@ -10,7 +10,7 @@ const MainTaskPageB = () => {
     const [created_date, setDate] = useState(new Date());
     const [important, setImportant] = useState("false")
     const dateNow = Date()
-    const ALL_TASK_DATA_API_URL_B = "https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/TaskB"
+    const ALL_TASK_DATA_API_URL_B = "https://edimwgfgsphnlyquzwnq.supabase.co/rest/v1/TaskB"
 
 
     const handleDescription = (event) => {

@@ -2,7 +2,7 @@ import React from 'react';
 import * as PropTypes from "prop-types";
 
 function TaskItem({task,deleteTask}) {
-    return;
+
 }
 
 TaskItem.propTypes = {deleteTask: PropTypes.func};
@@ -12,7 +12,7 @@ const TaskCardB = ({title, description, privacy,id}) => {
 
 
 
-        const response = await fetch(`https://hbrqywvuotrufdzvyden.supabase.co/rest/v1/TaskB?id=eq.${id}`, {
+        const response = await fetch(`https://edimwgfgsphnlyquzwnq.supabase.co/rest/v1/TaskB?id=eq.${id}`, {
             method:"DELETE",
             headers: {
                 "Content-Type":"application/json",

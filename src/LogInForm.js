@@ -1,10 +1,24 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import image from "./images/linkedin-svgrepo-com.svg";
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://edimwgfgsphnlyquzwnq.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
+
 
 
 const LogInForm = () => {
 
+    async function signInWithGoogle() {
+        const { data, error } = await supabase.auth.signInWithOAuth({
+            provider: 'google',
+        })
+    }
+    async function signout() {
+        const { error } = await supabase.auth.signOut()
+    }
 
     return (<div>
             <div className="max-w-lg mx-auto my-10 bg-white p-8 rounded-xl">
@@ -12,6 +26,8 @@ const LogInForm = () => {
                 <p className="text-orange-400 text-center">Hi, Welcome back 👋</p>
 
                 <div className="my-5">
+                    {/* https://edimwgfgsphnlyquzwnq.supabase.co/auth/v1/callback*/}
+                    {/*   */}
                     <button
                         className="w-full text-center py-3 my-3 border flex space-x-2 items-center justify-center border-slate-200 rounded-xl text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
                         <img src="https://www.svgrepo.com/show/355037/google.svg" className="w-6 h-6" alt="Google Logo"/> <span>Login with Google</span>
