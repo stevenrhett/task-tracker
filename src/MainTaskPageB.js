@@ -10,8 +10,7 @@ const MainTaskPageB = () => {
     const [created_date, setDate] = useState(new Date());
     const [important, setImportant] = useState("false")
     const dateNow = Date()
-    const ALL_TASK_DATA_API_URL_B = "https://edimwgfgsphnlyquzwnq.supabase.co/rest/v1/TaskB"
-
+    const ALL_TASK_DATA_API_URL_B = ""
 
     const handleDescription = (event) => {
         setDescription(event.target.value)
@@ -57,14 +56,12 @@ const MainTaskPageB = () => {
         }]
 
         const response = await fetch(ALL_TASK_DATA_API_URL, {
-            method: "POST",
-            headers: {
+            method: "POST", headers: {
                 "Content-Type": "application/json",
                 apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ",
                 Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ",
 
-            },
-            body: JSON.stringify(newTask)
+            }, body: JSON.stringify(newTask)
 
 
         });
@@ -87,8 +84,7 @@ const MainTaskPageB = () => {
 
     const getTaskData = async () => {
         const response = await fetch(ALL_TASK_DATA_API_URL, {
-            method: "GET",
-            headers: {
+            method: "GET", headers: {
                 "Content-Type": "application/json",
                 apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ",
                 Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ"
@@ -105,8 +101,7 @@ const MainTaskPageB = () => {
     }
     const getCompletedTasks = async () => {
         const response = await fetch(ALL_COMPLETED_API_URL, {
-            method: "GET",
-            headers: {
+            method: "GET", headers: {
                 "Content-Type": "application/json",
                 apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ",
                 Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ"
@@ -122,8 +117,7 @@ const MainTaskPageB = () => {
     }
     const getImportantTasks = async () => {
         const response = await fetch(IMPORTANT_TASKS_API_URL, {
-            method: "GET",
-            headers: {
+            method: "GET", headers: {
                 "Content-Type": "application/json",
                 apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ",
                 Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhicnF5d3Z1b3RydWZkenZ5ZGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ5MjM4MTIsImV4cCI6MTk4MDQ5OTgxMn0.t8ayO5c6H2X0cZgeNkzbwtMzAkbs1xFlJeuumCboIlQ"
@@ -152,17 +146,7 @@ const MainTaskPageB = () => {
     }, [])
 
 
-
-
-
-
-
-
-
-
-
-    return (
-        <div>
+    return (<div>
         <div className="relative">
             <div className="tabs justify-center text-center font-bold bg-gray-50">
                 <a onClick={async () => {
@@ -170,8 +154,9 @@ const MainTaskPageB = () => {
                 }} className="tab text-teal-600 hover:text-orange-400 hover:bg-gray-200 rounded">Important</a>
                 <a onClick={async () => {
                     await getCompletedTasks()
-                }} className="tab tab-active text-teal-600 hover:text-orange-400 hover:bg-gray-200 rounded">Completed Tasks</a>
-                <a  onClick={async () => {
+                }} className="tab tab-active text-teal-600 hover:text-orange-400 hover:bg-gray-200 rounded">Completed
+                    Tasks</a>
+                <a onClick={async () => {
                     await getTaskData()
                 }} className="tab text-teal-600 hover:text-orange-400 hover:bg-gray-200 rounded">All Tasks</a>
 
@@ -203,8 +188,7 @@ const MainTaskPageB = () => {
                 <button className="rounded-md bg-teal-600 text-white p-3">Refresh</button>
             </form>
         </div>
-        </div>
-    );
+    </div>);
 };
 
 export default MainTaskPageB;
