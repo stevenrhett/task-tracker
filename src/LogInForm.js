@@ -1,11 +1,31 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import {Link} from "react-router-dom";
 import image from "./images/linkedin-svgrepo-com.svg";
-
-
-
+import {supabase} from "./supabase.Config"
 
 const LogInForm = () => {
+
+    const emailInput = useRef()
+    const passwordInput = useRef()
+
+
+    async function signInWithGoogle() {
+        const { data, error } = await supabase.auth.signInWithOAuth({
+            provider: 'google',
+        })
+    }
+
+    async function signout() {
+        const { error } = await supabase.auth.signOut()
+    }
+
+    async function signInWithLinkedIn() {
+        const { data, error } = await supabase.auth.signInWithOAuth({
+            provider: 'linkedin',
+        })
+    }
+
+
 
 
 
@@ -17,13 +37,15 @@ const LogInForm = () => {
                 <div className="my-5">
                     <button
                         className="w-full text-center py-3 my-3 border flex space-x-2 items-center justify-center border-slate-200 rounded-xl text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
-                        <img src="https://www.svgrepo.com/show/355037/google.svg" className="w-6 h-6" alt="Google Logo"/> <span>Login with Google</span>
+                        <img src="https://www.svgrepo.com/show/355037/google.svg" className="w-6 h-6"
+                             onClick={signInWithGoogle} alt="Google Logo"/> <span>Login with Google</span>
                     </button>
                 </div>
                 <div className="my-5">
                     <button
                         className="w-full text-center py-3 my-3 border flex space-x-2 items-center justify-center border-slate-200 rounded-xl text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
-                        <img src={image} className="w-7 h-7" alt="linkedIn logo"/> <span>Login with LinkedIn</span>
+                        <img src={image} className="w-7 h-7" onClick={signInWithLinkedIn} alt="linkedIn logo"/>
+                        <span>Login with LinkedIn</span>
                     </button>
                 </div>
                 <form action="" className="my-10">
@@ -53,7 +75,7 @@ const LogInForm = () => {
                             </div>
                         </div>
                         <Link to="/maintaskpage"
-                            className="w-full py-3 font-medium text-white bg-teal-600 hover:bg-teal-500 rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center">
+                              className="w-full py-3 font-medium text-white bg-teal-600 hover:bg-teal-500 rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor"
                                  strokeWidth="2">
@@ -63,7 +85,7 @@ const LogInForm = () => {
                             <span>Login</span>
                         </Link>
                         <p className="text-center">Not registered yet? <Link to="/signuppage"
-                                                                          className="text-orange-400 font-medium inline-flex space-x-1 items-center"><span>Login here</span><span><svg
+                                                                             className="text-orange-400 font-medium inline-flex space-x-1 items-center"><span>Login here</span><span><svg
                             xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor"
                             strokeWidth="2">
