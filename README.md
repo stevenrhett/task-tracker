@@ -21,7 +21,8 @@
 - 💬 Ask us about **React**
 
 - Screenshots
-  <img width="700" alt="ScreenShot" src="C:\Users\SJohn\task-tracker\src\images\flow-01.png"/>
+![Screenshot (33).png](../images/flow-01.png)
+  
 
 - Credits ** Didier, Justin, and Steve**
 
