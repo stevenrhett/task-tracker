@@ -22,15 +22,15 @@ const router = createBrowserRouter([
                 element: <WelcomeComponent/>
             },
             {
-                path: "/signuppage",
+                path: "/signup",
                 element: <SignUpPage/>
             },
             {
-                path: "/loginpage",
+                path: "/login",
                 element: <LogInPage/>
             },
             {
-                path: "/maintaskpage",
+                path: "/task",
                 element: <MainTaskPageB/>
             },
             {
