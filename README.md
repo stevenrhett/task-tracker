@@ -21,7 +21,7 @@
 - 💬 Ask us about **React**
 
 - Screenshots
-- <img width="700" alt="ScreenShot" src="https://github.com/stevenrhett/task-tracker/blob/3829dad962cd2d3783157c60c7607bf1acc9c4cf/src/images/flow-01.png">
+- ![flow-01](https://user-images.githubusercontent.com/79732886/224586882-41510b36-c9b9-46f1-b4a3-80649658a02f.png)
 
 
 - Credits ** Didier, Justin, and Steve**
