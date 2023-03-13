@@ -21,7 +21,7 @@
 - 💬 Ask us about **React**
 
 - Screenshots
-![Screenshot (33).png](../images/flow-01.png)
+![flow-01.png](//src/images/flow-01.png)
   
 
 - Credits ** Didier, Justin, and Steve**
