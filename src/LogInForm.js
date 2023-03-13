@@ -1,32 +1,8 @@
-import React,{useRef} from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
 import image from "./images/linkedin-svgrepo-com.svg";
-import {supabase} from "./supabase.Config"
 
 const LogInForm = () => {
-
-    const emailInput = useRef()
-    const passwordInput = useRef()
-
-
-    async function signInWithGoogle() {
-        const { data, error } = await supabase.auth.signInWithOAuth({
-            provider: 'google',
-        })
-    }
-
-    async function signout() {
-        const { error } = await supabase.auth.signOut()
-    }
-
-    async function signInWithLinkedIn() {
-        const { data, error } = await supabase.auth.signInWithOAuth({
-            provider: 'linkedin',
-        })
-    }
-
-
-
 
 
     return (<div>
@@ -38,13 +14,13 @@ const LogInForm = () => {
                     <button
                         className="w-full text-center py-3 my-3 border flex space-x-2 items-center justify-center border-slate-200 rounded-xl text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
                         <img src="https://www.svgrepo.com/show/355037/google.svg" className="w-6 h-6"
-                             onClick={signInWithGoogle} alt="Google Logo"/> <span>Login with Google</span>
+                              alt="Google Logo"/> <span>Login with Google</span>
                     </button>
                 </div>
                 <div className="my-5">
                     <button
                         className="w-full text-center py-3 my-3 border flex space-x-2 items-center justify-center border-slate-200 rounded-xl text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
-                        <img src={image} className="w-7 h-7" onClick={signInWithLinkedIn} alt="linkedIn logo"/>
+                        <img src={image} className="w-7 h-7"  alt="linkedIn logo"/>
                         <span>Login with LinkedIn</span>
                     </button>
                 </div>
