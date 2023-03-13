@@ -32,7 +32,7 @@
 ![flow-07](https://user-images.githubusercontent.com/79732886/224587164-dbb3af52-a87d-438e-b365-4a38186624fc.png)
 
 
-- Credits ** Didier, Justin, and Steve**
+- Credits **Didier, Justin, and Steve**
 
 - License none
 <h3 class="left"></h3>
